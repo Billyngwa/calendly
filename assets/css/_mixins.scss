@@ -1,0 +1,15 @@
+@mixin displayElementFlex ($align) {
+    display:flex;
+    justify-content: space-between;
+    align-items:$align;
+}
+@mixin container($width, $margin-left) {
+    width:$width;
+    margin-left:$margin-left;
+}
+
+@mixin textStyle ( $font_size, $font_weight){
+    font-family: $font_family;
+    font-weight: $font_weight;
+    font-size: $font_size;
+}

@@ -1,0 +1,165 @@
+footer{
+    @include container(92%, 4%);
+    .upper_footer{
+        @include displayElementFlex(null);
+        width:100%;
+        .left{
+            width:40%;
+            .heading_section{
+                h1{
+                    font-weight: 900;
+                    font-size: 40px;
+                    color:$heading_color;
+                    font-family:$font_family;
+                    span{
+                        color:$blue;
+                    }  
+                }
+                p{
+                    font-weight: 400;
+                    line-height: 31px;
+                    font-size: 18px;
+                    color:$text_color;
+                    font-family:$font_family;
+                    word-spacing: 2px;
+                    padding-top: 30px;
+                }
+            }
+            .country_dropdown{
+                font-size: 18px;
+                color:$black_color;
+                font-family:$font_family;
+                margin: 90px 15px 0px 0px;
+                padding:5px;
+                border-radius:5px;
+                border: 1px solid rgba(0, 0, 0, 0.288);
+                list-style-type: none;
+                width:100%;
+                padding: 5px;
+                background-color: white;
+                border-radius: 5px;
+                border: 1px solid rgba(0, 0, 0, 0.288);
+                height: 0;
+                overflow: hidden;
+                position: relative;
+                &:hover{
+                    height:auto;
+                    z-index: 457;
+                }
+                li{
+                    margin: 10px 0px 10px 0px;
+                    a{
+                        font-weight:400;
+                        font-size: 16px;
+                        color:$black_color;
+                        font-family:$font_family;
+                        text-decoration: none;
+                        &:hover{
+                            color:$heading_color;
+                        }
+                    }
+                }
+            }
+            .online_stores{
+                display: flex;
+                gap:5px;
+                margin: 50px 0px 10px 0px;
+                .play_store, .apple_play{
+                    height:40px;
+                    width:150px;
+                    a{
+                        img{
+                            height:100%;
+                            width:100%;
+                        }
+                    }
+                }
+            }
+            .media_logos{
+                display:flex;
+                list-style-type: none;
+                width:70%;
+                gap:15%;
+                margin: 80px 0px 0px 0px;
+                li{
+                    a{
+                        text-decoration: none;
+                        color:$black_color;
+                        font-size:25px;
+                        &:hover{
+                            color:rgba(0, 0, 0, 0.534);
+                            transition: 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+        .right{
+            width: 60%;
+            margin: 0px 0px 30px 0px;
+            .footer_links{
+            //   display: grid;
+            //   grid-template-columns: auto auto auto;
+            //   list-style-type: none;
+            //   column-gap: 5%;
+            //   row-gap: 25%;
+                display:flex;
+                justify-content: space-between;
+                align-self: center;
+                flex-wrap: wrap;
+                width: 80%;
+                margin-left: 10%;
+                list-style-type: none; 
+                gap:5px;
+                .list_items{
+                    width:32%;
+                    ul{
+                        list-style-type: none;  
+                        h1{
+                            color:$heading_color;
+                            @include textStyle(20px, 700);
+                        }
+                        li{
+                            margin: 20px 0px 0px 0px;
+                            line-height: 20px;
+                            a{
+                                text-decoration: none;
+                                color:$text_color;
+                                font-size:16px;
+                                line-height: 1.7;
+                                font-family: $font_family;
+                                &:hover{
+                                text-decoration: underline;
+                                text-decoration-color: black;
+                                }
+                            }
+                        }
+                    }
+                }
+                .brutal{
+                    margin: 40px 0px 0px 0px;
+                }
+            }
+        }
+      
+    }
+    .lower{
+        @include displayElementFlex(center);
+        //  margin: 190px 0px 20px 0px;
+         p{
+            @include textStyle(12px, 400);
+            color: $text_color;
+         }
+         .privacy{
+            a{
+                color:$text_color;
+                text-decoration:none;
+                word-spacing: 3px;
+                &:hover{
+                    
+                    text-decoration:underline;
+                }
+            }
+         }
+    }
+}

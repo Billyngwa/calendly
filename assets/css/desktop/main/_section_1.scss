@@ -1,0 +1,24 @@
+main{
+    .section_one{
+        @include container(85%,7.5%);
+        margin-top: 160px;
+        h1{
+            @include container(70%,15%);
+            @include textStyle (30px,700);
+            text-align: center;
+            color: $heading_color;
+            line-height: 53px;
+            span{
+                color:$blue;
+            }
+        }
+        ul{
+            @include displayElementFlex(center);
+            align-self: center;
+            list-style-type: none;
+            li{
+                width: 18%;
+            }
+        }
+    }
+}
