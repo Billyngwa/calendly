@@ -579,7 +579,16 @@ footer .upper_footer .left .heading_section p {
   padding-top: 30px;
 }
 
-footer .upper_footer .left .country_dropdown {
+footer .upper_footer .left .dropdown_holder {
+  position: relative;
+  width: 100%;
+  bottom: 83px;
+  margin-top: 90px;
+  background-color: red;
+  height: 50px;
+}
+
+footer .upper_footer .left .dropdown_holder .country_dropdown {
   font-size: 18px;
   color: #000000;
   font-family: "Noto Sans", sans-serif;
@@ -593,21 +602,22 @@ footer .upper_footer .left .country_dropdown {
   background-color: white;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.288);
-  height: 0;
+  height: 40px;
   overflow: hidden;
-  position: relative;
+  position: absolute;
+  bottom: 0px;
 }
 
-footer .upper_footer .left .country_dropdown:hover {
+footer .upper_footer .left .dropdown_holder .country_dropdown:hover {
   height: auto;
   z-index: 457;
 }
 
-footer .upper_footer .left .country_dropdown li {
+footer .upper_footer .left .dropdown_holder .country_dropdown li {
   margin: 10px 0px 10px 0px;
 }
 
-footer .upper_footer .left .country_dropdown li a {
+footer .upper_footer .left .dropdown_holder .country_dropdown li a {
   font-weight: 400;
   font-size: 16px;
   color: #000000;
@@ -615,7 +625,7 @@ footer .upper_footer .left .country_dropdown li a {
   text-decoration: none;
 }
 
-footer .upper_footer .left .country_dropdown li a:hover {
+footer .upper_footer .left .dropdown_holder .country_dropdown li a:hover {
   color: #0b3558;
 }
 
